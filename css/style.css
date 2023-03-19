@@ -2177,6 +2177,10 @@ img {
   background: rgba(194, 131, 243, 0.4);
 }
 
+.gallery__swiper-slide:active::before {
+  opacity: 1;
+}
+
 .gallery__swiper-slide:active::after {
   opacity: 1;
 }
@@ -2202,6 +2206,12 @@ img {
 
 .projects__partner-link:active {
   border-color: var(--buttons_links_color);
+}
+
+.projects__partner-link:active .projects__logo {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1;
 }
 
 .catalog__list-item-wrapper:active:not(:focus-visible) .catalog__subtitle {
