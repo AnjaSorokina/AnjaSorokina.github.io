@@ -1428,12 +1428,12 @@ img {
 }
 
 .events__swiper-button-next {
-  right: 0;
+  right: 25px;
   background-position-x: calc(50% + 2px);
 }
 
 .events__swiper-button-prev {
-  left: 0;
+  left: 25px;
   background-position-x: calc(50% + 2px);
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
