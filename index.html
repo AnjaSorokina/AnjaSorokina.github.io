@@ -24,7 +24,7 @@
     <script defer src="js/inputmask.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script defer src="js/main.js"></script>
   </head>
   <body>
@@ -66,8 +66,8 @@
               <a class="menu__header__log-in header__log-in header-text" href="#">
                 <span class="text-wrapper menu__log-in-text">
                   <span class="icon-wrapper">
-                    <svg class="header__log-in-icon" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z" fill="#fff"/>
+                    <svg class="header__log-in-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
                     </svg>
                   </span>
                   Войти
@@ -76,7 +76,7 @@
             </div>
             <a class="header__logo" href="#" aria-label="Логотип Blanchard ссылка ведущая на нашу главную страницу">
               <picture>
-                <source srcset="img/header-logo-320.svg" media="(max-width:320px)">
+                <source srcset="img/header-logo-320.svg" media="(max-width:576px)">
                 <source srcset="img/header-logo-1024.svg" media="(max-width:1024px)">
                 <img src="img/header-logo-1920.svg" alt="Логотип Blanchard">
               </picture>
@@ -94,8 +94,8 @@
             <a class="header__log-in header-text" href="#">
               <span class="text-wrapper">
                 <span class="icon-wrapper">
-                  <svg class="header__log-in-icon" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z" fill="#fff"/>
+                  <svg class="header__log-in-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
                   </svg>
                 </span>
                 Войти
@@ -135,17 +135,19 @@
                   </svg>
                 </button>
                 <div class="dropdown-list" data-dropdown_list="Realism">
-                  <ul class="dropdown-list__list list-reset simplebar" data-simplebar>
-                    <li class="dropdown-list__item dropdown-list__item_Tintoretto"><a class="dropdown-list__link" href="#">Тинторетто</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Friedrich"><a class="dropdown-list__link" href="#">Фридрих</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Leonardo"><a class="dropdown-list__link" href="#">Леонардо</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Verrocchio"><a class="dropdown-list__link" href="#">Верроккьо</a></li>
-                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Алексей Венецианов</a></li>
-                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Василий Садовников</a></li>
-                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Жюль Дюпре</a></li>
-                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Алексей Боголюбов</a></li>
-                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Джованни Фаттори</a></li>
-                  </ul>
+                  <div class="simplebar dropdown-list__wrapper" data-simplebar>
+                    <ul class="list-reset">
+                      <li class="dropdown-list__item dropdown-list__item_tintoretto"><a class="dropdown-list__link" href="#">Тинторетто</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_friedrich"><a class="dropdown-list__link" href="#">Фридрих</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_leonardo"><a class="dropdown-list__link" href="#">Леонардо</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_verrocchio"><a class="dropdown-list__link" href="#">Верроккьо</a></li>
+                      <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Алексей Венецианов</a></li>
+                      <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Василий Садовников</a></li>
+                      <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Жюль Дюпре</a></li>
+                      <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Алексей Боголюбов</a></li>
+                      <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Джованни Фаттори</a></li>
+                    </ul>
+                  </div>
                 </div>
               </li>
               <li class="submenu__item">
@@ -156,12 +158,14 @@
                   </svg>
                 </button>
                 <div class="dropdown-list" data-dropdown_list="Impressionism">
-                  <ul class="dropdown-list__list list-reset simplebar" data-simplebar>
-                    <li class="dropdown-list__item dropdown-list__item_Monet"><a class="dropdown-list__link" href="#">Моне</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Sisley"><a class="dropdown-list__link" href="#">Сислей</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Mane"><a class="dropdown-list__link" href="#">Мане</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Renoir"><a class="dropdown-list__link" href="#">Ренуар</a></li>
-                  </ul>
+                  <div class="simplebar dropdown-list__wrapper" data-simplebar>
+                    <ul class="list-reset">
+                      <li class="dropdown-list__item dropdown-list__item_monet"><a class="dropdown-list__link" href="#">Моне</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_sisley"><a class="dropdown-list__link" href="#">Сислей</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_mane"><a class="dropdown-list__link" href="#">Мане</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_renoir"><a class="dropdown-list__link" href="#">Ренуар</a></li>
+                    </ul>
+                  </div>
                 </div>
               </li>
               <li class="submenu__item">
@@ -172,12 +176,14 @@
                   </svg>
                 </button>
                 <div class="dropdown-list" data-dropdown_list="PostImpressionism">
-                  <ul class="dropdown-list__list list-reset simplebar" data-simplebar>
-                    <li class="dropdown-list__item dropdown-list__item_Van-Gogh"><a class="dropdown-list__link" href="#">Ван Гог</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Cezanne"><a class="dropdown-list__link" href="#">Сезанн</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Gauguin"><a class="dropdown-list__link" href="#">Гоген</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Sera"><a class="dropdown-list__link" href="#">Сёра</a></li>
-                  </ul>
+                  <div class="simplebar dropdown-list__wrapper" data-simplebar>
+                    <ul class="list-reset">
+                      <li class="dropdown-list__item dropdown-list__item_van-gogh"><a class="dropdown-list__link" href="#">Ван Гог</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_cezanne"><a class="dropdown-list__link" href="#">Сезанн</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_gauguin"><a class="dropdown-list__link" href="#">Гоген</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_sera"><a class="dropdown-list__link" href="#">Сёра</a></li>
+                    </ul>
+                  </div>
                 </div>
               </li>
               <li class="submenu__item">
@@ -188,14 +194,16 @@
                   </svg>
                 </button>
                 <div class="dropdown-list" data-dropdown_list="Vanguard">
-                  <ul class="dropdown-list__list list-reset simplebar" data-simplebar>
-                    <li class="dropdown-list__item dropdown-list__item_Kandinsky"><a class="dropdown-list__link" href="#">Кандинский</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Marinetti"><a class="dropdown-list__link" href="#">Маринетти</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Malevich"><a class="dropdown-list__link" href="#">Малевич</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Picasso"><a class="dropdown-list__link" href="#">Пикассо</a></li>
-                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Михаил Фёдорович Ларионов</a></li>
-                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Давид Какабадзе</a></li>
-                  </ul>
+                  <div class="simplebar dropdown-list__wrapper" data-simplebar>
+                    <ul class="list-reset">
+                      <li class="dropdown-list__item dropdown-list__item_kandinsky"><a class="dropdown-list__link" href="#">Кандинский</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_marinetti"><a class="dropdown-list__link" href="#">Маринетти</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_malevich"><a class="dropdown-list__link" href="#">Малевич</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_picasso"><a class="dropdown-list__link" href="#">Пикассо</a></li>
+                      <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Михаил Фёдорович Ларионов</a></li>
+                      <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Давид Какабадзе</a></li>
+                    </ul>
+                  </div>
                 </div>
               </li>
               <li class="submenu__item">
@@ -206,12 +214,14 @@
                   </svg>
                 </button>
                 <div class="dropdown-list" data-dropdown_list="Futurism">
-                  <ul class="dropdown-list__list list-reset simplebar" data-simplebar>
-                    <li class="dropdown-list__item dropdown-list__item_Carra"><a class="dropdown-list__link" href="#">Карра</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Pratella"><a class="dropdown-list__link" href="#">Прателла</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Severini"><a class="dropdown-list__link" href="#">Северини</a></li>
-                    <li class="dropdown-list__item dropdown-list__item_Balla"><a class="dropdown-list__link" href="#">Балла</a></li>
-                  </ul>
+                  <div class="simplebar dropdown-list__wrapper" data-simplebar>
+                    <ul class="list-reset">
+                      <li class="dropdown-list__item dropdown-list__item_carra"><a class="dropdown-list__link" href="#">Карра</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_pratella"><a class="dropdown-list__link" href="#">Прателла</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_severini"><a class="dropdown-list__link" href="#">Северини</a></li>
+                      <li class="dropdown-list__item dropdown-list__item_balla"><a class="dropdown-list__link" href="#">Балла</a></li>
+                    </ul>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -290,54 +300,54 @@
                 <div class="gallery-swiper-button-next gallery-swiper-button"></div>
               </div>
               <div class="gallery__swiper-wrapper swiper-wrapper">
-                <div class="gallery__swiper-slide swiper-slide" tabindex="0">
+                <button class="gallery__swiper-slide swiper-slide btn-reset" tabindex="0">
                   <picture>
                     <source srcset="img/gallery-1-320.jpg" media="(max-width:320px)">
                     <source srcset="img/gallery-1-768.jpg" media="(max-width:768px)">
                     <source srcset="img/gallery-1-1024.jpg" media="(max-width:1024px)">
                     <img class="gallery__swiper-img" src="img/gallery-1.jpg" alt="Казимир Малевич Торс">
                   </picture>
-                </div>
-                <div class="gallery__swiper-slide swiper-slide" tabindex="0">
+                </button>
+                <button class="gallery__swiper-slide swiper-slide btn-reset" tabindex="0">
                   <picture>
                     <source srcset="img/gallery-2-320.jpg" media="(max-width:320px)">
                     <source srcset="img/gallery-2-768.jpg" media="(max-width:768px)">
                     <source srcset="img/gallery-2-1024.jpg" media="(max-width:1024px)">
                     <img class="gallery__swiper-img" src="img/gallery-2.jpg" alt="Казимир Малевич Женщина с граблями">
                   </picture>
-                </div>
-                <div class="gallery__swiper-slide swiper-slide" tabindex="0">
+                </button>
+                <button class="gallery__swiper-slide swiper-slide btn-reset" tabindex="0">
                   <picture>
                     <source srcset="img/gallery-3-320.jpg" media="(max-width:320px)">
                     <source srcset="img/gallery-3-768.jpg" media="(max-width:768px)">
                     <source srcset="img/gallery-3-1024.jpg" media="(max-width:1024px)">
                     <img class="gallery__swiper-img" src="img/gallery-3.jpg" alt="Казимир Малевич Уборка ржи">
                   </picture>
-                </div>
-                <div class="gallery__swiper-slide swiper-slide" tabindex="0">
+                </button>
+                <button class="gallery__swiper-slide swiper-slide btn-reset" tabindex="0">
                   <picture>
                     <source srcset="img/gallery-4-320.jpg" media="(max-width:320px)">
                     <source srcset="img/gallery-4-768.jpg" media="(max-width:768px)">
                     <source srcset="img/gallery-4-1024.jpg" media="(max-width:1024px)">
                     <img class="gallery__swiper-img" src="img/gallery-4.jpg" alt="Казимир Малевич Суперматизм">
                   </picture>
-                </div>
-                <div class="gallery__swiper-slide swiper-slide" tabindex="0">
+                </button>
+                <button class="gallery__swiper-slide swiper-slide btn-reset" tabindex="0">
                   <picture>
                     <source srcset="img/gallery-5-320.jpg" media="(max-width:320px)">
                     <source srcset="img/gallery-5-768.jpg" media="(max-width:768px)">
                     <source srcset="img/gallery-5-1024.jpg" media="(max-width:1024px)">
                     <img class="gallery__swiper-img" src="img/gallery-5.jpg" alt="Казимир Малевич Женщина с вёдрами">
                   </picture>
-                </div>
-                <div class="gallery__swiper-slide swiper-slide" tabindex="0">
+                </button>
+                <button class="gallery__swiper-slide swiper-slide btn-reset" tabindex="0">
                   <picture>
                     <source srcset="img/gallery-6-320.jpg" media="(max-width:320px)">
                     <source srcset="img/gallery-6-768.jpg" media="(max-width:768px)">
                     <source srcset="img/gallery-6-1024.jpg" media="(max-width:1024px)">
                     <img class="gallery__swiper-img" src="img/gallery-6.jpg" alt="Казимир Малевич Суперматизм">
                   </picture>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -388,49 +398,49 @@
             </div>
             <div class="catalog__right-block">
               <ul class="list-reset catalog__list accordion-container" role="tablist">
-                <li class="catalog__list-item ac" role="tab" tabindex="0" aria-label="С 1400 по 1499 годы">
-                    <div class="catalog__list-item-wrapper ac-trigger flex">
-                      <h3 class="subtitle catalog__subtitle ac-header">
-                        <span class="text-wrapper">C 1400 по 1499 гг</span>
-                      </h3>
-                      <button class="arrow btn-reset" type="button" aria-label="Показать художников данного периода"></button>
-                    </div>
-                    <div class="ac-panel" role="tabpanel">
-                      <ul class="catalog__artist-list list-reset">
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Бенедетто ди Биндо</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Бергоньоне, Амброджо</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Биссоло, Франческо</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="Boltraffio">Больтраффио, Джованни</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Бонсиньори, Франческо</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Боттичини, Рафаэлло</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Брамантино</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Бреа, Людовико</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Бьяджо д’Антонио Туччи</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Веккьетта</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Андреа Верроккьо</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text catalog__btn--active" href="#catalog-left-block" data-step="Ghirlandaio">Доменико Гирландайо</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Беноццо Гоццоли</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Граначчи, Франческо</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Грегорио ди Чекко</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Джованни да Удине</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Джованни ди Паоло</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="Dzordzone">Джорджоне</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Парентино, Бернардо</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Пезеллино</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Пьетро Перуджино</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Перуцци, Бальдассаре</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Пизанелло</a></li>
-                        <li class="ac-text catalog__artist-list-item"><a class="catalog__btn btn-reset text" href="#catalog-left-block" data-step="no-info">Пинтуриккьо</a></li>
-                      </ul>
-                    </div>
+                <li class="catalog__list-item ac">
+                  <button class="catalog__list-item-wrapper btn-reset ac-trigger flex" role="tab" aria-label="С 1400 по 1499 годы">
+                    <span class="subtitle catalog__subtitle ac-header">
+                      <span class="text-wrapper">C 1400 по 1499 гг</span>
+                    </span>
+                    <span class="arrow"></span>
+                  </button>
+                  <div class="ac-panel" role="tabpanel">
+                    <ul class="catalog__artist-list list-reset">
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Бенедетто ди Биндо</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Бергоньоне, Амброджо</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Биссоло, Франческо</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="Boltraffio">Больтраффио, Джованни</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Бонсиньори, Франческо</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Боттичини, Рафаэлло</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Брамантино</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Бреа, Людовико</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Бьяджо д’Антонио Туччи</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Веккьетта</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Андреа Верроккьо</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text catalog__btn--active" href="#catalog-left-block" data-step="Ghirlandaio">Доменико Гирландайо</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Беноццо Гоццоли</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Граначчи, Франческо</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Грегорио ди Чекко</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Джованни да Удине</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Джованни ди Паоло</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="Dzordzone">Джорджоне</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Парентино, Бернардо</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Пезеллино</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Пьетро Перуджино</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Перуцци, Бальдассаре</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Пизанелло</a></li>
+                      <li class="ac-text catalog__artist-list-item"><a class="catalog__btn js-scroll-link-mobile btn-reset text" href="#catalog-left-block" data-step="no-info">Пинтуриккьо</a></li>
+                    </ul>
+                  </div>
                 </li>
-                <li class="catalog__list-item ac" role="tab" tabindex="0" aria-label="С 1500 по 1599 годы">
-                  <div class="catalog__list-item-wrapper ac-trigger flex">
-                    <h3 class="subtitle catalog__subtitle ac-header">
+                <li class="catalog__list-item ac">
+                  <button class="catalog__list-item-wrapper btn-reset ac-trigger flex" role="tab" aria-label="С 1500 по 1599 годы">
+                    <span class="subtitle catalog__subtitle ac-header">
                       <span class="text-wrapper">C 1500 по 1599 гг</span>
-                    </h3>
-                    <button class="arrow btn-reset" type="button" aria-label="Показать художников данного периода"></button>
-                  </div>
+                    </span>
+                    <span class="arrow"></span>
+                  </button>
                   <div class="ac-panel" role="tabpanel">
                     <div class="catalog__empty flex">
                       <div class="catalog__empty-image"></div>
@@ -442,13 +452,13 @@
                     </div>
                   </div>
                 </li>
-                <li class="catalog__list-item ac" role="tab" tabindex="0" aria-label="С 1600 по 1699 годы">
-                  <div class="catalog__list-item-wrapper ac-trigger flex">
-                    <h3 class="subtitle catalog__subtitle ac-header">
+                <li class="catalog__list-item ac">
+                  <button class="catalog__list-item-wrapper btn-reset ac-trigger flex" role="tab" aria-label="С 1600 по 1699 годы">
+                    <span class="subtitle catalog__subtitle ac-header">
                       <span class="text-wrapper">C 1600 по 1699 гг</span>
-                    </h3>
-                    <button class="arrow btn-reset" type="button" aria-label="Показать художников данного периода"></button>
-                  </div>
+                    </span>
+                    <span class="arrow"></span>
+                  </button>
                   <div class="ac-panel" role="tabpanel">
                     <div class="catalog__empty flex">
                       <div class="catalog__empty-image"></div>
@@ -460,13 +470,13 @@
                     </div>
                   </div>
                 </li>
-                <li class="catalog__list-item ac" role="tab" tabindex="0" aria-label="С 1700 по 1799 годы">
-                  <div class="catalog__list-item-wrapper ac-trigger flex">
-                    <h3 class="subtitle catalog__subtitle ac-header">
+                <li class="catalog__list-item ac">
+                  <button class="catalog__list-item-wrapper btn-reset ac-trigger flex" role="tab" aria-label="С 1700 по 1799 годы">
+                    <span class="subtitle catalog__subtitle ac-header">
                       <span class="text-wrapper">C 1700 по 1799 гг</span>
-                    </h3>
-                    <button class="arrow btn-reset" type="button" aria-label="Показать художников данного периода"></button>
-                  </div>
+                    </span>
+                    <span class="arrow"></span>
+                  </button>
                   <div class="ac-panel" role="tabpanel">
                     <div class="catalog__empty flex">
                       <div class="catalog__empty-image"></div>
@@ -478,13 +488,13 @@
                     </div>
                   </div>
                 </li>
-                <li class="catalog__list-item ac" role="tab" tabindex="0" aria-label="С 1800 по 1899 годы">
-                  <div class="catalog__list-item-wrapper ac-trigger flex">
-                    <h3 class="subtitle catalog__subtitle ac-header">
+                <li class="catalog__list-item ac">
+                  <button class="catalog__list-item-wrapper btn-reset ac-trigger flex" role="tab" aria-label="С 1800 по 1899 годы">
+                    <span class="subtitle catalog__subtitle ac-header">
                       <span class="text-wrapper">C 1800 по 1899 гг</span>
-                    </h3>
-                    <button class="arrow btn-reset" type="button" aria-label="Показать художников данного периода"></button>
-                  </div>
+                    </span>
+                    <span class="arrow"></span>
+                  </button>
                   <div class="ac-panel" role="tabpanel">
                     <div class="catalog__empty flex">
                       <div class="catalog__empty-image"></div>
@@ -496,13 +506,13 @@
                     </div>
                   </div>
                 </li>
-                <li class="catalog__list-item ac" role="tab" tabindex="0" aria-label="С 1900 по 1999 годы">
-                  <div class="catalog__list-item-wrapper ac-trigger flex">
-                    <h3 class="subtitle catalog__subtitle ac-header">
+                <li class="catalog__list-item ac">
+                  <button class="catalog__list-item-wrapper btn-reset ac-trigger flex" role="tab" aria-label="С 1900 по 1999 годы">
+                    <span class="subtitle catalog__subtitle ac-header">
                       <span class="text-wrapper">C 1900 по 1999 гг</span>
-                    </h3>
-                    <button class="arrow btn-reset" type="button" aria-label="Показать художников данного периода"></button>
-                  </div>
+                    </span>
+                    <span class="arrow"></span>
+                  </button>
                   <div class="ac-panel" role="tabpanel">
                     <div class="catalog__empty flex">
                       <div class="catalog__empty-image"></div>
@@ -514,13 +524,13 @@
                     </div>
                   </div>
                 </li>
-                <li class="catalog__list-item ac" role="tab" tabindex="0" aria-label="С двухтысячного года">
-                  <div class="catalog__list-item-wrapper ac-trigger flex">
-                    <h3 class="subtitle catalog__subtitle ac-header">
+                <li class="catalog__list-item ac">
+                  <button class="catalog__list-item-wrapper btn-reset ac-trigger flex" role="tab" aria-label="С двухтысячного года">
+                    <span class="subtitle catalog__subtitle ac-header">
                       <span class="text-wrapper">C 2000 г</span>
-                    </h3>
-                    <button class="arrow btn-reset" type="button" aria-label="Показать художников данного периода"></button>
-                  </div>
+                    </span>
+                    <span class="arrow"></span>
+                  </button>
                   <div class="ac-panel" role="tabpanel">
                     <div class="catalog__empty flex">
                       <div class="catalog__empty-image"></div>
@@ -540,6 +550,7 @@
       <section class="events" id="events">
         <div class="events__container container">
           <h2 class="events__title title">События</h2>
+          <button class="events__swiper-button events__swiper-button-prev btn-reset"></button>
           <div class="events__swiper events-swiper">
             <div class="events__swiper-wrapper swiper-wrapper">
               <div class="events__swiper-slide swiper-slide">
@@ -639,7 +650,7 @@
               </div>
             </div>
           </div>
-          <div class="events__swiper-button-next"></div>
+          <button class="events__swiper-button events__swiper-button-next btn-reset"></button>
           <div class="swiper-pagination events__swiper-pagination"></div>
         </div>
       </section>
@@ -672,7 +683,7 @@
           </p>
           <h3 class="subtitle projects__subtitle">Партнёры проектов:</h3>
           <div class="projects__flex-container flex">
-            <div class="projects__swiper-button projects__swiper-button-prev"></div>
+            <button class="projects__swiper-button projects__swiper-button-prev btn-reset"></button>
             <div class="projects__swiper projects-swiper">
               <div class="projects__swiper-wrapper swiper-wrapper">
                 <div class="projects__swiper-slide swiper-slide">
@@ -722,66 +733,68 @@
                 </div>
               </div>
             </div>
-            <div class="projects__swiper-button projects__swiper-button-next"></div>
+            <button class="projects__swiper-button projects__swiper-button-next btn-reset"></button>
           </div>
         </div>
       </section>
       <section class="contacts" id="contacts">
-        <div class="container contacts__container flex">
-          <address class="contacts__address flex">
-            <span class="contacts__address-weight-bold">Шоурум №4</span>
-            <span class="contacts__address-weight-normal">Леонтьевский переулок, дом 5/1</span>
-          </address>
-          <form class="contacts__form flex" action="#" autocomplete="off">
-            <label class="contacts__form-label contacts__label" aria-label="Введите имя">
-              <input
-                class="contacts__input form-control input-name"
-                type="text"
-                placeholder="Имя*"
-                name="name"
-                id="name"
-                autocomplete="off"
-              >
-            </label>
-            <label class="contacts__form-label contacts__label" aria-label="Введите телефон">
-              <input
-                class="contacts__input form-control input-tel"
-                type="tel"
-                placeholder="Телефон*"
-                autocomplete="off"
-                name="tel"
-                id="tel">
-            </label>
-            <button class="contacts__btn btn-reset" type="submit">Заказать обратный звонок</button>
-          </form>
+        <div class="contacts__borders">
+          <div class="container contacts__container flex">
+            <address class="contacts__address flex">
+              <span class="contacts__address-weight-bold">Шоурум №4</span>
+              <span class="contacts__address-weight-normal">Леонтьевский переулок, дом 5/1</span>
+            </address>
+            <form class="contacts__form flex" action="#" autocomplete="off">
+              <label class="contacts__form-label contacts__label" aria-label="Введите имя">
+                <input
+                  class="contacts__input form-control input-name"
+                  type="text"
+                  placeholder="Имя*"
+                  name="name"
+                  id="name"
+                  autocomplete="off"
+                >
+              </label>
+              <label class="contacts__form-label contacts__label" aria-label="Введите телефон">
+                <input
+                  class="contacts__input form-control input-tel"
+                  type="tel"
+                  placeholder="Телефон*"
+                  autocomplete="off"
+                  name="tel"
+                  id="tel">
+              </label>
+              <button class="contacts__btn btn-reset" type="submit">Заказать обратный звонок</button>
+            </form>
 
-          <div class="contacts__contacts">
-            <h3 class="contacts__subtitle subtitle">Связаться в один клик</h3>
-            <ul class="contacts__list list-reset">
-              <li class="contacts__list-item">
-                <a class="contacts__link" href="https://www.whatsapp.com/?lang=ru" target="_blank" aria-label="Связаться с нами по Вацап">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_191243_648)">
-                    <path d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z" fill="#30BF39"/>
-                    <path d="M25.875 21.751C25.625 21.626 24.3125 20.876 24.0625 20.8135C23.8125 20.6885 23.625 20.6885 23.4375 20.9385C23.25 21.1885 22.6875 21.8135 22.5625 21.9385C22.375 22.126 22.25 22.126 22 22.001C21.75 21.876 20.875 21.5635 19.875 20.5635C19.125 19.8135 18.5625 18.9385 18.4375 18.626C18.3125 18.376 18.4375 18.1885 18.5625 18.0635C18.6875 17.9385 18.8125 17.751 19 17.626C19.1875 17.501 19.1875 17.376 19.3125 17.1885C19.4375 17.001 19.375 16.876 19.3125 16.6885C19.25 16.501 18.75 15.1885 18.5625 14.626C18.375 14.0635 18.125 14.1885 18 14.126C17.8125 14.126 17.6875 14.0635 17.5 14.0635C17.25 14.0635 16.9375 14.1885 16.75 14.376C16.5 14.626 15.75 15.251 15.75 16.5635C15.75 17.876 16.625 19.251 16.75 19.376C16.875 19.5635 18.5 22.4385 21.1875 23.626C23.875 24.8135 23.875 24.4385 24.375 24.4385C24.875 24.4385 26 23.8135 26.25 23.251C26.5 22.626 26.5 22.0635 26.4375 22.001C26.3125 22.001 26.125 21.9385 25.875 21.751ZM20.875 28.1885C19.125 28.1885 17.5 27.6885 16.0625 26.751L12.6875 27.8135L13.8125 24.5635C12.75 23.0635 12.125 21.251 12.125 19.376C12.125 14.501 16.0625 10.5635 20.9375 10.5635C25.8125 10.5635 29.6875 14.501 29.6875 19.376C29.6875 24.251 25.75 28.1885 20.875 28.1885ZM20.875 8.81348C15.0625 8.81348 10.3125 13.5635 10.3125 19.376C10.3125 21.3135 10.8125 23.1885 11.8125 24.8135L9.875 30.501L15.75 28.626C17.3125 29.501 19.0625 29.9385 20.875 29.9385C26.6875 29.9385 31.4375 25.1885 31.4375 19.376C31.4375 13.5635 26.75 8.81348 20.875 8.81348Z" fill="white"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_191243_648">
-                    <rect width="40" height="40" fill="white"/>
-                    </clipPath>
-                    </defs>
-                  </svg>
-                </a>
-              </li>
-              <li class="contacts__list-item">
-                <a class="contacts__link" href="https://web.telegram.org/z/" target="_blank" aria-label="Связаться с нами в Телеграм">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="#26A5E4"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05321 19.7889L20.7168 14.7649C26.2711 12.4547 27.4251 12.0534 28.1774 12.0402C28.3429 12.0373 28.7128 12.0783 28.9524 12.2727C29.1548 12.4369 29.2104 12.6587 29.2371 12.8143C29.2637 12.9699 29.2969 13.3246 29.2705 13.6017C28.9695 16.7641 27.6671 24.4386 27.0046 27.9806C26.7242 29.4794 26.1726 29.9819 25.6378 30.0311C24.4763 30.138 23.5944 29.2635 22.4694 28.5261L18.0061 25.528C16.0314 24.2268 17.3115 23.5116 18.4369 22.3428C18.7314 22.0368 23.8487 17.3823 23.9477 16.96C23.9597 16.9072 23.9716 16.7104 23.8547 16.6064C23.7377 16.5024 23.565 16.5384 23.4405 16.5663C23.264 16.6064 20.452 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8355 22.9435C12.1214 22.9281 10.7478 22.5397 9.72661 22.2078C8.47408 21.8007 7.4786 21.5854 7.56532 20.8939C7.61044 20.5338 8.1064 20.1655 9.05317 19.789L9.05321 19.7889Z" fill="white"/>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            <div class="contacts__contacts">
+              <h3 class="contacts__subtitle subtitle">Связаться в один клик</h3>
+              <ul class="contacts__list list-reset">
+                <li class="contacts__list-item">
+                  <a class="contacts__link" href="https://www.whatsapp.com/?lang=ru" target="_blank" aria-label="Связаться с нами по Вацап">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_191243_648)">
+                      <path d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z" fill="#30BF39"/>
+                      <path d="M25.875 21.751C25.625 21.626 24.3125 20.876 24.0625 20.8135C23.8125 20.6885 23.625 20.6885 23.4375 20.9385C23.25 21.1885 22.6875 21.8135 22.5625 21.9385C22.375 22.126 22.25 22.126 22 22.001C21.75 21.876 20.875 21.5635 19.875 20.5635C19.125 19.8135 18.5625 18.9385 18.4375 18.626C18.3125 18.376 18.4375 18.1885 18.5625 18.0635C18.6875 17.9385 18.8125 17.751 19 17.626C19.1875 17.501 19.1875 17.376 19.3125 17.1885C19.4375 17.001 19.375 16.876 19.3125 16.6885C19.25 16.501 18.75 15.1885 18.5625 14.626C18.375 14.0635 18.125 14.1885 18 14.126C17.8125 14.126 17.6875 14.0635 17.5 14.0635C17.25 14.0635 16.9375 14.1885 16.75 14.376C16.5 14.626 15.75 15.251 15.75 16.5635C15.75 17.876 16.625 19.251 16.75 19.376C16.875 19.5635 18.5 22.4385 21.1875 23.626C23.875 24.8135 23.875 24.4385 24.375 24.4385C24.875 24.4385 26 23.8135 26.25 23.251C26.5 22.626 26.5 22.0635 26.4375 22.001C26.3125 22.001 26.125 21.9385 25.875 21.751ZM20.875 28.1885C19.125 28.1885 17.5 27.6885 16.0625 26.751L12.6875 27.8135L13.8125 24.5635C12.75 23.0635 12.125 21.251 12.125 19.376C12.125 14.501 16.0625 10.5635 20.9375 10.5635C25.8125 10.5635 29.6875 14.501 29.6875 19.376C29.6875 24.251 25.75 28.1885 20.875 28.1885ZM20.875 8.81348C15.0625 8.81348 10.3125 13.5635 10.3125 19.376C10.3125 21.3135 10.8125 23.1885 11.8125 24.8135L9.875 30.501L15.75 28.626C17.3125 29.501 19.0625 29.9385 20.875 29.9385C26.6875 29.9385 31.4375 25.1885 31.4375 19.376C31.4375 13.5635 26.75 8.81348 20.875 8.81348Z" fill="white"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_191243_648">
+                      <rect width="40" height="40" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__list-item">
+                  <a class="contacts__link" href="https://web.telegram.org/z/" target="_blank" aria-label="Связаться с нами в Телеграм">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="#26A5E4"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05321 19.7889L20.7168 14.7649C26.2711 12.4547 27.4251 12.0534 28.1774 12.0402C28.3429 12.0373 28.7128 12.0783 28.9524 12.2727C29.1548 12.4369 29.2104 12.6587 29.2371 12.8143C29.2637 12.9699 29.2969 13.3246 29.2705 13.6017C28.9695 16.7641 27.6671 24.4386 27.0046 27.9806C26.7242 29.4794 26.1726 29.9819 25.6378 30.0311C24.4763 30.138 23.5944 29.2635 22.4694 28.5261L18.0061 25.528C16.0314 24.2268 17.3115 23.5116 18.4369 22.3428C18.7314 22.0368 23.8487 17.3823 23.9477 16.96C23.9597 16.9072 23.9716 16.7104 23.8547 16.6064C23.7377 16.5024 23.565 16.5384 23.4405 16.5663C23.264 16.6064 20.452 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8355 22.9435C12.1214 22.9281 10.7478 22.5397 9.72661 22.2078C8.47408 21.8007 7.4786 21.5854 7.56532 20.8939C7.61044 20.5338 8.1064 20.1655 9.05317 19.789L9.05321 19.7889Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="contacts__map" id="map"></div>

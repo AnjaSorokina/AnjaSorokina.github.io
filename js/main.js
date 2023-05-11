@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
   let burger=document.querySelector('.header__navigation-mini-wrapper'),
       menu=document.querySelector('.menu'),
-      menuListItem=document.querySelectorAll('.menu__list-item'),
+      menuLink=document.querySelectorAll('.menu__link'),
       menuCloseBtn=document.querySelector('.menu__close-btn'),
       navBtn=document.querySelector('.header__search-btn'),
       searchContainer=document.querySelector('.search-container'),
@@ -66,8 +66,6 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   let eventsSwiper = new Swiper('.events-swiper', {
-    loop: true,
-
     a11y: {
     paginationBulletMessage: 'Слайд номер {{index}}',
     prevSlideMessage: 'Предыдущий слайд',
@@ -77,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function(){
     navigation: true,
     navigation: {
       nextEl: '.events__swiper-button-next',
+      prevEl: '.events__swiper-button-prev',
     },
 
     pagination: {
@@ -102,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function(){
       },
       1025: {
         slidesPerView: 3,
-        slidesPerGroup: 3,
+        slidesPerGroup: 1,
         spaceBetween: 50,
       }
     }
@@ -111,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function(){
   let projectsSwiper = new Swiper('.projects-swiper', {
     slidesPerView: 3,
     slidesPerGroup: 3,
-    loop: true,
+    loop: false,
     spaceBetween: 50,
     a11y: {
     paginationBulletMessage: 'Слайд номер {{index}}',
@@ -149,15 +148,18 @@ document.addEventListener('DOMContentLoaded', function(){
   // menu
   burger.addEventListener('click', function(){
     menu.classList.add('menu__is-active');
+    document.body.classList.add('stop-scroll')
   });
 
   menuCloseBtn.addEventListener('click', function(){
     menu.classList.remove('menu__is-active');
+    document.body.classList.remove('stop-scroll')
   });
 
-  menuListItem.forEach(function(el){
+  menuLink.forEach(function(el){
     el.addEventListener('click', function(){
       menu.classList.remove('menu__is-active');
+      document.body.classList.remove('stop-scroll')
     });
   })
 
@@ -222,8 +224,8 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 
-   //scrollbar
-   new SimpleBar(document.querySelector('.dropdown-list__list'));
+  //scrollbar
+  new SimpleBar(document.querySelector('.dropdown-list__wrapper'));
 
   // select
   const galerySelect = document.querySelector('.js-choice');
@@ -312,6 +314,44 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 
+  (() => {
+    const MOBILE_WIDTH = 768;
+
+    function getWindowWidth () {
+      return Math.max(
+        document.body.scrollWidth,
+        document.documentElement.scrollWidth,
+        document.body.offsetWidth,
+        document.documentElement.offsetWidth,
+        document.body.clientWidth,
+        document.documentElement.clientWidth
+      );
+    }
+
+    function scrollToContent (link, isMobile) {
+      if (isMobile && getWindowWidth() > MOBILE_WIDTH) {
+        return;
+      }
+
+      const href = link.getAttribute('href').substring(1);
+      const scrollTarget = document.getElementById(href);
+      const elementPosition = scrollTarget.getBoundingClientRect().top;
+
+      window.scrollBy({
+          top: elementPosition,
+          behavior: 'smooth'
+      });
+    }
+
+    document.querySelectorAll('.js-scroll-link-mobile').forEach(link => {
+      link.addEventListener('click', function(e) {
+          e.preventDefault();
+
+          scrollToContent(this, true);
+      });
+    });
+  })();
+
   //map
   ymaps.ready(init);
   function init(){
@@ -334,11 +374,17 @@ document.addEventListener('DOMContentLoaded', function(){
       }
       );
 
+      if (window.matchMedia("(max-width: 576px)").matches) {
+          myMap.controls.remove('zoomControl');
+          myMap.controls.remove('geolocationControl');
+      }
+
       var myPlacemark = new ymaps.Placemark([55.75846806898367,37.60108849999989], {}, {
         iconLayout: 'default#image',
         iconImageHref: 'img/card-point.svg',
         iconImageSize: [20, 20],
     });
     myMap.geoObjects.add(myPlacemark);
+    myMap.behaviors.disable('scrollZoom');
   }
 });
