@@ -8,6 +8,7 @@
   --active_element_color_1: #7943a4;
   --active_element_color_2: #c283f3;
   --active_element_color_3: #d1a9f0;
+  --dropdown_list_padding: 21px;
 }
 
 html {
@@ -380,7 +381,7 @@ img {
 }
 
 .header__second-block {
-  padding: 23px 0 21px 0;
+  padding: 23px 0 var(--dropdown_list_padding) 0;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -497,7 +498,7 @@ img {
 
 .dropdown-list {
   position: absolute;
-  top: calc(100% + 19px);
+  top: calc(100% + var(--dropdown_list_padding));
   left: 0;
   display: none;
   max-height: 300px;

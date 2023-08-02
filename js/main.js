@@ -355,34 +355,52 @@ document.addEventListener('DOMContentLoaded', function(){
   //map
   ymaps.ready(init);
   function init(){
-      var myMap = new ymaps.Map("map", {
-          center: [55.75846806898367,37.60108849999989],
-          zoom: 15,
-          controls: ['geolocationControl', 'zoomControl']
+    var myMap = new ymaps.Map("map", {
+        center: [55.75846806898367,37.60108849999989],
+        zoom: 15,
+        controls: ['geolocationControl', 'zoomControl']
+    },
+    {
+      geolocationControlFloat: 'none',
+      geolocationControlPosition: {
+        bottom: '310px',
+        right: '18px'
       },
-      {
-        geolocationControlFloat: 'none',
-        geolocationControlPosition: {
-          bottom: '310px',
-          right: '18px'
-        },
-        zoomControlSize: 'small',
-        zoomControlPosition: {
-          bottom: '370px',
-          right: '18px'
-        }
+      zoomControlSize: 'small',
+      zoomControlPosition: {
+        bottom: '370px',
+        right: '18px'
       }
-      );
+    }
+    );
 
-      if (window.matchMedia("(max-width: 576px)").matches) {
+    if (window.matchMedia("(max-width: 576px)").matches) {
+      if (Object.keys(myMap.controls._controlKeys).length) {
+        myMap.controls.remove('zoomControl');
+        myMap.controls.remove('geolocationControl');
+      }
+    }
+
+    myMap.behaviors.disable("scrollZoom");
+
+    myMap.events.add("sizechange", function (e) {
+      if (window.matchMedia("(max-width: 1024px)").matches) {
+        if (Object.keys(myMap.controls._controlKeys).length) {
           myMap.controls.remove('zoomControl');
           myMap.controls.remove('geolocationControl');
+        }
+      } else {
+        if (!Object.keys(myMap.controls._controlKeys).length) {
+          myMap.controls.add('zoomControl');
+          myMap.controls.add('geolocationControl');
+        }
       }
+    });
 
-      var myPlacemark = new ymaps.Placemark([55.75846806898367,37.60108849999989], {}, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/card-point.svg',
-        iconImageSize: [20, 20],
+    var myPlacemark = new ymaps.Placemark([55.75846806898367,37.60108849999989], {}, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/card-point.svg',
+      iconImageSize: [20, 20],
     });
     myMap.geoObjects.add(myPlacemark);
     myMap.behaviors.disable('scrollZoom');
